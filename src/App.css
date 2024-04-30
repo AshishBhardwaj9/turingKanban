@@ -1,4 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
 #root {
+  @apply bg-black text-white box-border;
+}
+
+/* box-border is a utility class used in CSS frameworks like Tailwind CSS. It is used to ensure that the border of an element is included in its total dimensions, preventing the element from changing size when a border is added.
+
+For example, consider the following HTML element:
+
+html
+Copy code
+<div class="box-border border-2 p-4">
+  This is a box with a border.
+</div>
+In this example, the box-border class ensures that the border width is included in the total width and height of the <div> element. Therefore, when a border of 2px is added, the element's dimensions will increase by 4px (2px on each side), but the content area inside the border will remain the same size.
+
+This is in contrast to the default box model in CSS, where the border is added to the outside of the element's dimensions, causing the element's size to increase when a border is added. The box-border class helps maintain consistent layout and spacing in responsive designs. */
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +61,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

@@ -34,3 +34,10 @@ npm create vite@latest
 npm i @dnd-kit/core @dnd-kit/sortable #A lightweight, modular, performant, accessible and extensible drag & drop toolkit for React. Built for React: exposes hooks such as useDraggable and useDroppable, and  won't require you to re-architect your app or create additional wrapper DOM nodes.
 npm install -D tailwindcss
 npx tailwindcss init
+-update tailwind.config -> content, colors
+- empty app.css and index.css
+-add in app.css 
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+-npm i tailwind-merge
